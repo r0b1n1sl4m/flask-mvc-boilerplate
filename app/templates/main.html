@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<!-- Header Section -->
+	<header id="header_wrapper">
+	</header>
+	<!-- End Of Header Section -->
+
+	<!-- Content Section -->
+	<section id="content_wrapper">
+		{% block content %}{% endblock %}
+	</section>
+	<!-- End Of Content Section -->
+
+	<!-- Footer Section -->
+	<footer id="footer_wrapper">
+	</footer>
+	<!-- End Of Footer Section -->
+
+	<!-- JS -->
+	<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
